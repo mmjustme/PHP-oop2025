@@ -1,12 +1,13 @@
 <?php
 
-#[\AllowDynamicProperties]
-// дозволяє ств динамічні параметри без видавання помилки
 class Product
 {
     public ?string $title = "Some product";
-    // ? = null тобто значення стрінги або null
-    // "Some product" - значення за замовчуванням
-    public int|float $price;
+    public int $price;
+
+    public function sayHello(): string
+    {
+        return "Hello from " . __CLASS__ . PHP_EOL;
+    }
 
 }
