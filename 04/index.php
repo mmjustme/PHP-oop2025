@@ -7,3 +7,5 @@ $phone = new Product();
 
 $phone->price = 1000;
 var_dump($phone);
+$price = $phone->getRealPrice();
+var_dump($price);
