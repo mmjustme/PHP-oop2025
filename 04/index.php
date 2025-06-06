@@ -3,5 +3,7 @@
 require_once __DIR__ . "/Product.php";
 
 $phone = new Product();
-echo $phone->sayHello();
+//echo $phone->sayHello();
 
+$phone->price = 1000;
+var_dump($phone);
