@@ -10,8 +10,8 @@ class Product
         return "Hello from " . __CLASS__ . PHP_EOL;
     }
 
-    public function getRealPrice():int|float
+    public function getRealPrice($currency = "$"):string
     {
-        return $this->price / 100;
+        return "{$currency}" . $this->price / 100;
     }
 }
