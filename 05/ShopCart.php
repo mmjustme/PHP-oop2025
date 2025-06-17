@@ -4,13 +4,15 @@ class ShopCart
 {
     public array $products = [];
 
-    public function showProducts():void
+    public function showProducts(): void
     {
         foreach ($this->products as $index => $product) {
             echo $index . ": " .
                 $product["title"] .
                 " {$product["price"]}" . "$\n";
         }
+        echo "Total:$" . $this->getTotal() . "\n";
+        echo "Items:" . count($this->products);
 
     }
 
